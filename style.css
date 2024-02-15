@@ -1,0 +1,79 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: content-box;
+}
+.container{
+    height: 100vh;
+    width: 100vw;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.card{
+    height: 400px;
+    width: 400px;
+    background-color: rgb(156, 144, 156);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.card img{
+    height:40%;
+    width: 50%;
+    margin-top: 2.5em;
+    margin-bottom: 1.5em;
+    border-radius: 5px;
+}
+#vol{
+    width: 100%;
+    background-color: cornflowerblue;
+    
+}
+#audio{
+    margin-top: 15px;
+    width: 70%;
+    margin-bottom: 10px;
+    /* height: .5em; */
+}
+
+.card marquee{
+    font-size: 1.5em;
+    color: black;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    /* margin-bottom: 15px; */
+}
+#vol{
+    width: 50%;
+}
+.controls{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 50%;
+    height: 1em;
+    margin: 25px;
+    padding-left: 30px;
+}
+#forward{
+    width: 50px;
+    height: 50px;
+}
+#play{
+    width: 40px;
+    height: 50px;
+    /* border-radius: 50%; */
+    /* background-color: chartreuse; */
+    /* margin: 0px 15px 0px 15px; */
+    /* padding-top: 25px; */
+    /* text-align: center; */
+}
+#backward{
+    width: 50px;
+    height: 50px;
+    /* padding:10px 0px 0px 10px */
+}

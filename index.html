@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music Player card</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/36936801ec.js" crossorigin="anonymous"></script>
+    
+</head>
+<body>
+    <div class="container"> 
+        <div id="musicCard" class="card">
+            <!-- Card used to create Music player UI -->
+
+            <img id="picOfSong" src="https://i.redd.it/a2750b58uu2a1.jpg" alt="Master Of Puppets">
+
+            <marquee id="nameOfSong" direction="left">Master of Puppets-The best riff of all time</marquee>
+           
+            <input type="range" name="volume" id="vol" value="0">
+            <audio id="audio" controls autoplay src="/Master of Puppets (Remastered) (320 kbps).mp3">Master of Puppets</audio>
+            <div class="controls">
+                <!-- <input type="range" value="0"> -->
+            <!-- <button id="backward"><img id="backwardIcon" src="/backward.png" alt=""></button>
+            <button id="play"><img id="playIcon" src="/play.webp" alt=""></button>
+            <button id="forward"><img id="forwardIcon" src="/forward.png" alt=""></button> -->
+
+            <!-- //using icons from font awesome// -->
+
+            <i class="fa-solid fa-backward" id="backward"></i>
+            <i class="fa-solid fa-play" id="play" ></i>
+            <i class="fa-solid fa-forward" id="forward"></i>
+        </div>
+      
+
+        </div>
+    </div>
+    </div>
+
+    <script>
+        const musicCard =document.getElementById("musicCard")
+        const picOfSong =document.getElementById("picOfSong")
+        const nameOfSong =document.getElementById("nameOfSong")
+        const audio =document.getElementById("audio")
+        const backward =document.getElementById("backward")
+        const play =document.getElementById("play")
+        const forward =document.getElementById("forward")
+        const vol=document.getElementById("vol");
+
+        forward.onclick=function(){
+            audio.src="/shreeRam.mp3";
+            picOfSong.src="/lordRam.webp";
+            nameOfSong.textContent="Jai Shree Ram";
+             }
+
+            //  function playPause(){
+            //     if(playPause){
+            //         play.src="<i class="fa-solid fa-pause"></i>";
+            //     }
+            //  }
+             
+             
+             backward.onclick=function(){
+                audio.src="/Perfect.mp3";
+                picOfSong.src="/Ed.jpg";
+                nameOfSong.textContent="Perfect-Ed Sheeran";
+             }
+    </script>
+</body>
+</html>
