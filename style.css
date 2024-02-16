@@ -15,7 +15,7 @@
 .card{
     height: 400px;
     width: 400px;
-    background-color: rgb(156, 144, 156);
+    background-color: rgb(175, 161, 175);
     border-radius: 15px;
     display: flex;
     flex-direction: column;
